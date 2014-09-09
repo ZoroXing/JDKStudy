@@ -1,3 +1,6 @@
+# VER=150
+# VER=160
+# VER=170
 function java_ver(){
    VER=`head -1 javaver |awk -F\" '{print $2}' | awk -F_ '{print $1}' | sed -e "s/\.//g"`
    echo "VER="$VER
